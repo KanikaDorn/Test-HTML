@@ -5,10 +5,17 @@ This test I create a website about tourism service that user can find the that t
 <html lang="em">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
     <title>Cambodia Travel Tours</title>
     <style>
-        /* Reset some default browser styles */
+        div.sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            padding: 2px;
+            background-color: #badbf0;
+            border: 2px solid #cb0505;
+        }
         body, h1, h2, p {
             margin: 0;
             padding: 0;
@@ -43,7 +50,14 @@ This test I create a website about tourism service that user can find the that t
             margin-bottom: 20px;
             overflow: hidden;
         }
-
+        div.fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            background-color: #f6f1ef;
+            border: 3px solid #73AD21;
+        }
         .tour-card img {
             width: 100%;
             height: auto;
@@ -87,6 +101,7 @@ This test I create a website about tourism service that user can find the that t
     </style>
 </head>
 <body style="background-color: rgb(173, 250, 250);">
+<div class="sticky"> Welcome to Cambodia Travel Tour</div>
     <header>
         <h1>Cambodia Travel Tours</h1>
         <p>Your gateway to exploring the beauty of Cambodia</p>
@@ -131,5 +146,10 @@ This test I create a website about tourism service that user can find the that t
             </div>
         </div>
     </div>
+
+<div class="fixed">
+Emergency Contact:<br>
+097-779-3897(Dorn Kanika)
+</div>
 </body>
 </html>
